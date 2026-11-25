@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen flex justify-center items-center p-4">
+
+  <main class="kartu w-full max-w-xl rounded-2xl p-6">
+
+    <header class="mb-6">
+      <h1 class="judul text-3xl font-bold">To-Do List</h1>
+      <p class="ayat text-sm mt-2">
+        “Segala sesuatu yang dijumpai tanganmu untuk dikerjakan, kerjakanlah itu sekuat tenaga.”
+        <br>Pengkhotbah 9:10
+      </p>
+    </header>
+
+    <form id="form" class="flex flex-wrap gap-2 mb-4">
+      <input id="inputNama" type="text" placeholder="Tulis tugas baru..."
+        class="kolom flex-1 min-w-[10rem] rounded-lg px-3 py-2">
+      <input id="inputTanggal" type="date" class="kolom rounded-lg px-3 py-2">
+      <button type="submit" class="tombol rounded-lg px-4 py-2 font-semibold">Tambah</button>
+    </form>
+
+    <div id="filter" class="filter flex flex-wrap gap-2 mb-3">
+      <button type="button" class="chip aktif" data-filter="semua">Semua</button>
+      <button type="button" class="chip" data-filter="belum">Belum selesai</button>
+      <button type="button" class="chip" data-filter="overdue">Overdue</button>
+      <button type="button" class="chip" data-filter="selesai">Selesai</button>
+    </div>
+
+    <div class="flex justify-between items-center mb-3">
+      <p id="ringkasan" class="ringkasan text-sm"></p>
+      <button id="tombolHapusSelesai" type="button" class="link-aksi text-sm">Hapus yang selesai</button>
+    </div>
+
+    <ul id="daftar" class="space-y-2"></ul>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

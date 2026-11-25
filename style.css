@@ -1,0 +1,119 @@
+body {
+  background-color: #cfe0f5;
+  color: #111111;
+}
+
+.kartu {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ayat {
+  color: #555555;
+  font-style: italic;
+}
+
+.kolom {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  color: #111111;
+}
+
+.tombol {
+  background-color: #eeeeee;
+  border: 1px solid #999999;
+  cursor: pointer;
+}
+.tombol:hover {
+  background-color: #dddddd;
+}
+
+
+.chip {
+  background-color: #ffffff;
+  border: 1px solid #999999;
+  border-radius: 999px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.chip:hover {
+  background-color: #eeeeee;
+}
+.chip.aktif {
+  background-color: #111111;
+  border-color: #111111;
+  color: #ffffff;
+}
+
+.ringkasan {
+  color: #555555;
+}
+
+.link-aksi {
+  background: none;
+  border: none;
+  color: #555555;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.link-aksi:hover {
+  color: #dc2626;
+}
+.link-aksi[hidden] {
+  display: none;
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  padding: 0.25rem 0;
+}
+
+.nama-selesai {
+  text-decoration: line-through;
+  color: #888888;
+}
+
+.tanggal {
+  color: #555555;
+  font-size: 0.875rem;
+}
+
+.badge {
+  min-width: 6.5rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.badge-overdue { color: #dc2626; }
+.badge-belum   { color: #555555; }
+.badge-selesai { color: #16a34a; }
+
+.hapus {
+  background: none;
+  border: none;
+  color: #888888;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 0.25rem 0.4rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.hapus:hover {
+  color: #dc2626;
+  background-color: #fee2e2;
+}
+
+.chip:focus-visible,
+.hapus:focus-visible,
+.link-aksi:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.kosong {
+  color: #666666;
+}
